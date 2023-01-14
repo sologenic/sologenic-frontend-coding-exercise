@@ -1,0 +1,17 @@
+.Header-wrapper {
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+
+  img {
+    width: 32px;
+    margin-right: 24px;
+  }
+
+  .Header-links {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+}
