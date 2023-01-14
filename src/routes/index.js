@@ -8,13 +8,8 @@ export default [
     element: <MainPage />,
   },
   {
-    name: "User",
-    path: "/user",
+    name: "Users",
+    path: "/users",
     element: <UserPage />,
-  },
-  {
-    name: "About",
-    path: "/about",
-    element: <MainPage />,
   },
 ];

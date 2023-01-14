@@ -7,9 +7,8 @@ function* fetchUsersSaga() {
 }
 
 function* fetchUsersCall() {
-  const data = yield getUsersData();
-
-  yield put(actions.user.fillUsers(data));
+  // We already helped you with the fetch of the users
+  // You can use the method getUsersData to retrieve the data.
 }
 
 export default [fork(fetchUsersSaga)];

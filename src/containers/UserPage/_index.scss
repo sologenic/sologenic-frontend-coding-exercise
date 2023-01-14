@@ -1,2 +1,10 @@
-.UserPage-container {
+.UsersPage-container {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+  }
 }
