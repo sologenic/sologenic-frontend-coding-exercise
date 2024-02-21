@@ -1,6 +1,7 @@
 import "./_index.scss";
-import React from "react";
-import { useDispatch } from "react-redux";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import actions from "../../actions";
 import VerifiedBadgeSVG from "../../images/verified_badge.svg";
 import AvatarPlaceholderSVG from "../../images/avatar_placeholder.svg";
 
@@ -36,6 +37,11 @@ import AvatarPlaceholderSVG from "../../images/avatar_placeholder.svg";
 
 export default function UserPage(props) {
   const dispatch = useDispatch();
+  const users = useSelector((state) => state.users);
+
+  useEffect(() => {
+    dispatch(actions.fetchUsers());
+  }, []);
 
   return (
     <div className="UsersPage-container">
