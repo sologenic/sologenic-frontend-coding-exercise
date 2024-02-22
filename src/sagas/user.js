@@ -10,7 +10,7 @@ function* fetchUsersCall() {
   // We already helped you with the fetch of the users
   // You can use the method getUsersData to retrieve the data.
   // Notice that this is a generator function and some of the syntax is different.
-  // Feel free to search on how they work and what you need to do.
+  // Feel free to search on how sagas work and what you need to do.
 }
 
 export default [fork(fetchUsersSaga)];
